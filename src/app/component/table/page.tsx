@@ -15,7 +15,7 @@ import { dataProps, editStateProps } from '@/app/interface';
 import { useDispatch } from 'react-redux';
 
 
-export default function TableData({setEditState}:editStateProps) {
+export default function TableData({setEditState}:any) {
   const dispatch = useDispatch()
     const {data} = useAppSelector((state) => state.product);
     const handleDelete = (id:number)=> {
