@@ -15,7 +15,7 @@ const validationSchema = yup.object().shape({
   quantity: yup.number().required('Quantity is required').positive('Quantity must be a positive number'),
 });
 
-const AddForm = ({ productToEdit}:addProps) => {
+const AddForm = ({ productToEdit}:any) => {
   const [open, setOpen] = useState(false);
   const dispatch = useDispatch();
 
